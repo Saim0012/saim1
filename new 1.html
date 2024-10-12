@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Webpage Design</title>
+	<link rel="stylesheet" href="1.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+        .slide {
+            display: none; /* Hide all slides initially */
+        }
+        .active {
+            display: block; /* Show the active slide */
+        }
+</style>
+</head>
+   <body> 
+	<div class="Main">
+   	 <div class="navbar">>
+
+   	  <div class="icon">
+   	   <h2 class="logo">Rayyan</h2>	 
+</div>
+       <div class="menu">
+	   <ul>
+	   <li><a href="#" onclick="showSlide('home')">Home</a></li>
+       <li><a href="#"   onclick="showSlide('about')">ABOUT</a></li>
+       <li><a href="#" onclick="showSlide('service')">SERVICE</a></li>
+       <li><a href="#" onclick="showSlide('design')">DESIGN</a></li>
+       <li><a href="#" onclick="showSlide('contact')">CONTACT</a></li>
+</ul>	   
+</div>
+       <div class="search">
+         <input class="srch" type="search" name="search" Placeholder="Search Here">	
+         <a href="#"><button class="btn">Search</button></a>		 
+</div>
+
+</div>
+       <div class="content">
+	   <h1> Web Desgin & <br><span>Development</span> </h1>
+       <p class="par"></p>
+       <button class="cn"><a href="#"></a>JOIN US</button>
+	   <div class="form">
+	    <h2>Login Here</h2>
+		<input type="email" name="email" placeholder="Type Email">
+		<input  type="password" name="" placeholder="Password">
+		<button class="btnn">Login</button>
+		
+		<p class="link">Don't have an account<br>
+		
+		<a href="#">Sign up </a> here </p>
+		<p class="liw">Log in With </p>
+		
+		<div class="icons">
+		   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+		   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+		   <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+		   <a href="#"><i class="fa-brands fa-youtube"></i></a>
+		   
+		   
+		</div>
+		</div>
+
+    <div class="content">
+        <div id="home" class="slide active">
+            <h1>Welcome to the Home Page</h1>
+            <p>This is the content of your home page.</p>
+        </div>
+        <div id="about" class="slide">
+            <h1>About Us</h1>
+            <p>This is the About Us content.</p>
+        </div>
+        <div id="service" class="slide">
+              <h1>Web <span>Development</span><br>Services<span>:-</span></h1><br><br><br>
+<p class="ww"><h3 class="ow">Custom Web Development:-</h3><br>
+We specialize in creating tailored web solutions that meet your unique business needs.<br></p>
+
+<p class="aa"><h3 class="ow">Responsive Web Design:-</h3><br>
+We design websites that adapt seamlessly to all devices and screen sizes, ensuring a consistent user experience whether on desktop, tablet, or smartphone.<br></p>
+
+<p class="bb"><h3 class="ow">Content Management Systems (CMS):-</h3><br>
+We offer CMS development services that empower you to manage your website content easily. Whether you prefer WordPress, Joomla, or a custom solution, we provide the tools you need to keep your site updated without technical hassle.<br></p>
+
+<p class="cc"><h3 class="ow">Website Maintenance and Support:-</h3><br>
+Keep your website running smoothly with our ongoing maintenance and support services. We provide regular updates, security checks, and performance optimization to ensure your site remains secure and up-to-date.<br></p>
+
+<p class="dd"><h3 class="ow">SEO Optimization:-</h3><br>
+Enhance your website’s visibility with our SEO services. We implement best practices to improve your search engine rankings, driving organic traffic and increasing your online presence.<br></p>
+        </div>
+        <div id="design" class="slide">
+            <h1>Design</h1>
+            <p>This is the Design content.</p>
+        </div>
+        <div id="contact" class="slide">
+            <h1>Contact Us</h1>
+            <p>This is the Contact content.</p>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+    <script>
+        function showSlide(slideId) {
+            // Hide all slides
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            // Show the selected slide
+            document.getElementById(slideId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
